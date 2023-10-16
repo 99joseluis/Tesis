@@ -15,7 +15,8 @@ $$
 \begin{equation}    
 	dst(x,y) = \left[        
 	\begin{array}{ll}           
-		maxVal  &   \mathrm{si\ } src(x,y) > thresh\\            			0   & \mathrm{en\ otro\ caso}        
+		maxVal  &   \mathrm{si\ } src(x,y) > thresh\\            			
+		0   & \mathrm{en\ otro\ caso}        
 	\end{array}    
 	\right.
 \end{equation}
@@ -26,7 +27,8 @@ $$
 \begin{equation}    
 dst(x,y) = \left[        
 \begin{array}{ll}           
-	0  &   \mathrm{si\ } src(x,y) > thresh\\            			maxVal   & \mathrm{en\ otro\ caso}        
+	0  &   \mathrm{si\ } src(x,y) > thresh\\            			
+	maxVal   & \mathrm{en\ otro\ caso}        
 	\end{array}    
 	\right.
 \end{equation}
@@ -37,7 +39,8 @@ $$
 \begin{equation}    
 dst(x,y) = \left[        
 \begin{array}{ll}           
-		thresh  &   \mathrm{si\ } src(x,y) > thresh\\   			src(x,y)   & \mathrm{en\ otro\ caso}        
+		thresh  &   \mathrm{si\ } src(x,y) > thresh\\   			
+		src(x,y)   & \mathrm{en\ otro\ caso}        
 	\end{array}    
 	\right.
 \end{equation}
@@ -48,7 +51,8 @@ $$
 \begin{equation}    
 dst(x,y) = \left[        
 \begin{array}{ll}           
-	src(x,y)  &   \mathrm{si\ } src(x,y) > thresh\\   			0   	  &   \mathrm{en\ otro\ caso}        
+	src(x,y)  &   \mathrm{si\ } src(x,y) > thresh\\   			
+	0   	  &   \mathrm{en\ otro\ caso}        
 	\end{array}    
 	\right.
 \end{equation}
