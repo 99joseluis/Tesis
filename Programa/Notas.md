@@ -11,52 +11,48 @@
 - ThresholdTechnique: Tecnica a utilizar de treshold, entre las mas cupadas se encuentran:
 	- cv2.THRESH_BINARY: utiliza el valor del umbral como punto medio, es decir, todos los pixeles que sobrepasen este valor se le será asignado el maximo valor (maxVal), de lo contrario se les asigna el valor 0 
 	
-	$$
-	\begin{equation}    
-		dst(x,y) = \left[        
-		\begin{array}{ll}           
-	    	maxVal  &   \mathrm{si\ } src(x,y) > thresh\\            			0   & \mathrm{en\ otro\ caso}        
-	    \end{array}    
-	    \right.
-	\end{equation}
-	$$
+$$
+\begin{equation}    
+	dst(x,y) = \left[        
+	\begin{array}{ll}           
+		maxVal  &   \mathrm{si\ } src(x,y) > thresh\\            			0   & \mathrm{en\ otro\ caso}        
+	\end{array}    
+	\right.
+\end{equation}
+$$
 	
 	- cv2.THRESH_BINARY_INV: Es lo contrario al THRESH_BINARY
-	  $$
-	  \begin{equation}    
-	  	dst(x,y) = \left[        
-	  	\begin{array}{ll}           
-	      	0  &   \mathrm{si\ } src(x,y) > thresh\\            			maxVal   & \mathrm{en\ otro\ caso}        
-	      \end{array}    
-	      \right.
-	  \end{equation}
-	  $$
+$$
+\begin{equation}    
+dst(x,y) = \left[        
+\begin{array}{ll}           
+	0  &   \mathrm{si\ } src(x,y) > thresh\\            			maxVal   & \mathrm{en\ otro\ caso}        
+	\end{array}    
+	\right.
+\end{equation}
+$$
 	  
 	- cv2.THRESH_TRUNC: utiliza el valor de umbral como punto maximo, es decir, todos los pixeles que sobrepasen este valor se les asignará el valor del umbral y los que sean menores que el umbral permaneceran del mismo valor
-	  $$
-	  \begin{equation}    
-	  	dst(x,y) = \left[        
-	  	\begin{array}{ll}           
-	      		thresh  &   \mathrm{si\ } src(x,y) > thresh\\   			src(x,y)   & \mathrm{en\ otro\ caso}        
-	      \end{array}    
-	      \right.
-	  \end{equation}
-	  $$
-	  
-	  $$
-	  
-	  $$
+$$
+\begin{equation}    
+dst(x,y) = \left[        
+\begin{array}{ll}           
+		thresh  &   \mathrm{si\ } src(x,y) > thresh\\   			src(x,y)   & \mathrm{en\ otro\ caso}        
+	\end{array}    
+	\right.
+\end{equation}
+$$
 	
 	- cv2.THRESH_TOZERO: Todos los pixeles que se encuentren por debajo o igual que el valor de umbral se les asignará el valor 0, mientras que los que lo sobrepasen permaneceran igual
-	  $$
-	  \begin{equation}    
-	  	dst(x,y) = \left[        
-	  	\begin{array}{ll}           
-	      	src(x,y)  &   \mathrm{si\ } src(x,y) > thresh\\   			0   	  &   \mathrm{en\ otro\ caso}        
-	      \end{array}    
-	      \right.
-	  \end{equation}
-	  $$
+$$
+\begin{equation}    
+dst(x,y) = \left[        
+\begin{array}{ll}           
+	src(x,y)  &   \mathrm{si\ } src(x,y) > thresh\\   			0   	  &   \mathrm{en\ otro\ caso}        
+	\end{array}    
+	\right.
+\end{equation}
+$$
 	  
 	- cv2.THRESH_TOZERO_INV: 
 
