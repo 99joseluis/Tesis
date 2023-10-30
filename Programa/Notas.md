@@ -21,7 +21,7 @@ $$
 	\right.
 \end{equation}
 $$
-	
+
 	- cv2.THRESH_BINARY_INV: Es lo contrario al THRESH_BINARY
 $$
 \begin{equation}    
@@ -33,7 +33,7 @@ dst(x,y) = \left[
 	\right.
 \end{equation}
 $$
-	  
+
 	- cv2.THRESH_TRUNC: utiliza el valor de umbral como punto maximo, es decir, todos los pixeles que sobrepasen este valor se les asignará el valor del umbral y los que sean menores que el umbral permaneceran del mismo valor
 $$
 \begin{equation}    
@@ -45,7 +45,7 @@ dst(x,y) = \left[
 	\right.
 \end{equation}
 $$
-	
+
 	- cv2.THRESH_TOZERO: Todos los pixeles que se encuentren por debajo o igual que el valor de umbral se les asignará el valor 0, mientras que los que lo sobrepasen permaneceran igual
 $$
 \begin{equation}    
@@ -57,7 +57,7 @@ dst(x,y) = \left[
 	\right.
 \end{equation}
 $$
-	  
+
 	- cv2.THRESH_TOZERO_INV: 
 
 
@@ -82,4 +82,13 @@ $$
   - hist: Histograma de salida
   - accumulate: Bandera de acumulación, permite calcular un solo histograma a partir de varios arreglos.
 
- 
+
+
+
+```mermaid
+graph TD;
+    Imagen_RGB --> Filter_GaussianBlur;
+    Filter_GaussianBlur --> thrshold-Otshu;
+    
+```
+
